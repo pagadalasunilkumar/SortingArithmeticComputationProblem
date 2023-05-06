@@ -1,7 +1,8 @@
+echo "Welcome to sorting algorithm problems"
 read -p "Enter the value of a: " a
 read -p "Enter the value of b: " b
 read -p "Enter the value of c: " c
 
-result=$(bc -l <<< "$c + $a / $b")
+result=$((a % b + c))
 
-echo "Result: $result
+echo "Result: $result"
